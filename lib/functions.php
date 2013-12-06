@@ -273,4 +273,25 @@ function request_callback($html, $info, $request) {
 }
 
 
+/**
+* API FUNCTIONS START HERE!
+*/
+
+/**
+* Get status by id (not sure how you'd know this!)
+*/
+
+function return_item_json($id) {
+  $siteList = getCacheFile();
+
+  //Grab the time the data was last updated
+  $lastUpdatedTime = $siteList[0][0];
+
+  //Shift the list to remove the update time from the list
+  array_shift($siteList);
+  $site = findSiteWithId($id, $siteList);
+  
+  return json_encode($site);
+}
+
 ?>
