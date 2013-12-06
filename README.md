@@ -45,9 +45,9 @@ Ta-da.
 * For simplicity, SSL certificates are simply accepted (no validation) by Curl (with 'https' URLs).
 
 ##API
-*In api.php
-*Requires using a query string value of ?id=(id of service)
-*Will return entry/information in JSON format.
+*In api.php<br>
+*Requires using a query string value of ?id=(id of service)<br>
+*Will return entry/information in JSON format.<br>
 
 ##Groups
 Basic group functionality has been added. To enable, edit index.php, comment out getStatus(), and uncomment getGroupStatus().
