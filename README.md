@@ -44,6 +44,11 @@ Ta-da.
 * A service is deemed "Down" if the HTTP status code is not '200' (redirects are followed, eventually resulting in a 200).
 * For simplicity, SSL certificates are simply accepted (no validation) by Curl (with 'https' URLs).
 
+##API
+*In api.php
+*Requires using a query string value of ?id=(id of service)
+*Will return entry/information in JSON format.
+
 ##Groups
 Basic group functionality has been added. To enable, edit index.php, comment out getStatus(), and uncomment getGroupStatus().
 
