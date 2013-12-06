@@ -45,7 +45,7 @@ Ta-da.
 * For simplicity, SSL certificates are simply accepted (no validation) by Curl (with 'https' URLs).
 
 ##API
-* In api.php
+* Call api.php (cross domain enabled by default)
 * Requires using a query string value of ?id=(id of service)
 * Will return entry/information in JSON format.
 
